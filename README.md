@@ -65,3 +65,11 @@ npm test
 Testes Playwright em 1440 × 1000 e 390 × 844 cobrem navegação, menu móvel, ausência de overflow horizontal nas principais telas, estrutura, persistência e reversão, calendário, treinos, filtros, fichas e materiais ausentes. Capturas são geradas em `artifacts/desktop.png` e `artifacts/mobile.png`.
 
 O ambiente atual já possui Chromium em `/usr/bin/chromium`. Em outra máquina, instale o navegador com `npx playwright install chromium`; o arquivo de configuração usa o Chromium do sistema quando disponível, ou o navegador do Playwright.
+
+## Link público permanente e atualização da prévia
+
+Link para compartilhar com o sócio: https://medeiros-15m36-preview.abloommockingbird.chatgpt.site
+
+O acesso já está público. Não é necessário liberar novamente a cada alteração. Caminhos /workspace/... são arquivos locais e não são links compartilháveis.
+
+Ao concluir alterações no Codex, execute `npm run export:preview`, atualize `preview/index.html` com a exportação gerada, inclua os recursos necessários e faça commit e push para a branch padrão. Não conclua a tarefa entregando apenas um caminho local. Há uma verificação automática horária no ChatGPT que sincroniza mudanças desta prévia com o mesmo Site público. Arquivos apenas locais ou commits ainda não enviados não são sincronizados. A automação é gerenciada no ChatGPT, não por GitHub Actions. Não inclua segredos, dados pessoais reais ou credenciais na prévia pública.
