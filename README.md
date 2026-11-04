@@ -75,3 +75,11 @@ O ambiente atual já possui Chromium em `/usr/bin/chromium`. Em outra máquina, 
 Antes da reformulação foi criada a tag local `restore/pre-reformulacao-15m36-20261104`, no commit `91a734c`, e um arquivo completo dos arquivos versionados em `/workspace/15m36-before-redesign.tar.gz`. Nenhum arquivo original foi excluído. A nova numeração dos treinos usa IDs estáveis para não associar conclusões antigas a outras fases. Receita alguma foi adicionada: os cinco exemplos anteriores permanecem demonstrativos. O envio desta versão à branch principal foi autorizado pelo usuário. Nas próximas alterações, mantenha a prévia atualizada no GitHub e informe o endereço público permanente.
 
 A hidratação usa `15m36-hydration-v1` no localStorage: meta manual e registros do dia local do aparelho. No novo dia, mantém a meta e reinicia o consumo. As conclusões continuam em `15m36-progress-v1`. Não há histórico remoto, autenticação, prescrição de água ou acompanhamento individual. A entrega e os direitos de acesso reais dependem da futura configuração na Hotmart.
+
+## Link público permanente e atualização da prévia
+
+Link para compartilhar com o sócio: https://medeiros-15m36-preview.abloommockingbird.chatgpt.site
+
+O acesso já está público. Não é necessário liberar novamente a cada alteração. Caminhos /workspace/... são arquivos locais e não são links compartilháveis.
+
+Ao concluir alterações no Codex, preserve os ajustes manuais e mantenha `preview/index.html` atualizado, inclua os recursos necessários e faça commit e push para a branch principal. Não regenere nem sobrescreva a prévia atual sem autorização explícita: ela pode conter ajustes que não estão em `src/`. Não conclua a tarefa entregando apenas um caminho local. Há uma verificação automática horária no ChatGPT que sincroniza mudanças desta prévia com o mesmo Site público. Arquivos apenas locais ou commits ainda não enviados não são sincronizados. A automação é gerenciada no ChatGPT, não por GitHub Actions. Não inclua segredos, dados pessoais reais ou credenciais na prévia pública.
