@@ -1,0 +1,1958 @@
+/* Identidade 15M36 · reformulação aplicada sobre o layout original. */
+:root {
+  color-scheme: dark;
+  color: #f5f5f6;
+  background: #101113;
+  --green: #ff702d;
+  --lime: #ff883d;
+  --muted: #a5a5ad;
+  --line: #303137;
+  --orange: #ff762e;
+  --gradient: linear-gradient(115deg, #ff9a3d 0%, #ff6729 65%, #f24b2e 100%);
+  --surface: #1a1b1f;
+  --surface-raised: #222328;
+}
+body {
+  background: #101113;
+}
+button {
+  color: inherit;
+}
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 3px solid #ff9b55;
+  outline-offset: 4px;
+}
+h1,
+h2,
+h3 {
+  color: #f7f7f8;
+}
+small {
+  color: #a5a5ad;
+}
+a {
+  color: #ff9a62;
+}
+.accent-text {
+  color: #ff8c49;
+}
+.eyebrow {
+  color: #ff9a62;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+.sidebar {
+  background: #151619;
+  border-color: #2a2b30;
+  overflow-y: auto;
+  padding-top: 32px;
+}
+.brand {
+  color: #f7f7f8;
+}
+.brand-mark {
+  color: #ff7d35;
+}
+.course-label {
+  color: #94949e;
+  margin-top: 40px;
+  font-size: 9px;
+}
+.sidebar nav {
+  gap: 5px;
+}
+.sidebar nav button {
+  font-size: 12px;
+  padding: 13px 12px;
+  color: #b4b4be;
+}
+.sidebar nav button:hover {
+  background: #232429;
+}
+.sidebar nav button.active {
+  background: linear-gradient(90deg, #ff792929, #ff792909);
+  color: #ffa66f;
+  box-shadow: inset 3px 0 #ff7b32;
+}
+.nav-tag {
+  background: #ff752c12;
+  border-color: #70432e;
+  color: #ffa970;
+}
+.sidebar-progress {
+  margin-top: 25px;
+  padding-top: 22px;
+}
+.sidebar-progress .progress-group + .progress-group {
+  margin-top: 20px;
+}
+.progress-label {
+  color: #c8c8cf;
+  font-size: 11px;
+}
+.progress-label b {
+  font-size: 12px;
+  color: #fff;
+}
+.progress-track {
+  background: #34353c;
+  height: 6px;
+  margin: 10px 0;
+}
+.progress-track > span {
+  background: var(--gradient);
+}
+.progress-group > small {
+  font-size: 10px;
+  color: #a4a4b0;
+}
+.sidebar-bottom {
+  padding-top: 24px;
+}
+.sidebar-bottom p {
+  font-size: 10px;
+  line-height: 1.9;
+  letter-spacing: 1px;
+  color: #9a9aa5;
+}
+.sidebar-bottom > span {
+  color: #83838e;
+  font-size: 7px;
+}
+.evo-logo {
+  color: #7b7c86;
+}
+.evo-logo span {
+  color: #ff8b43;
+}
+.topbar {
+  background: #141518;
+  border-color: #2a2b30;
+}
+.topbar > div {
+  color: #cacad2;
+}
+.topbar b {
+  color: #fff;
+}
+.top-subtitle {
+  color: #a2a2ac;
+}
+.demo-badge {
+  background: #222022;
+  border-color: #4a3427;
+  color: #ffad7c;
+  font-size: 10px;
+}
+.demo-badge i {
+  background: #ff8a42;
+}
+.welcome {
+  margin-bottom: 24px;
+}
+.welcome p {
+  font-size: 12px;
+  color: #a4a4b0;
+  margin-top: 8px;
+}
+.welcome-label {
+  color: #a7a7b0;
+  font-size: 9px;
+  letter-spacing: 0.7px;
+}
+.dot {
+  background: #ff863c;
+}
+.hero {
+  background:
+    radial-gradient(ellipse at 100% 100%, #82341455, transparent 65%), #1c1d21;
+  min-height: 395px;
+  border: 1px solid #383037;
+  border-radius: 12px;
+}
+.hero-content {
+  padding: 38px 37px;
+  width: 69%;
+}
+.hero-label {
+  font-size: 9px;
+  color: #c2a38f;
+  letter-spacing: 1.6px;
+}
+.hero h1 {
+  font-size: 43px;
+  font-weight: 800;
+  line-height: 1.14;
+  letter-spacing: -1.4px;
+  max-width: 590px;
+  margin: 23px 0 20px;
+}
+.hero h1 em {
+  font-style: normal;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: block;
+}
+.hero p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #b8b8c1;
+  max-width: 490px;
+}
+.lime-button {
+  background: var(--gradient);
+  color: #121212;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  min-height: 48px;
+  margin-top: 6px;
+  box-shadow: 0 8px 28px #ff69251f;
+}
+.lime-button:hover {
+  background: linear-gradient(115deg, #ffb15e, #ff7b39);
+  box-shadow: 0 8px 28px #ff692535;
+}
+.primary {
+  background: var(--gradient);
+  color: #121212;
+  font-size: 12px;
+  font-weight: 750;
+  min-height: 46px;
+}
+.primary:hover {
+  background: linear-gradient(115deg, #ffb15e, #ff7b39);
+}
+.secondary {
+  background: #29252a;
+  border: 1px solid #584034;
+  color: #ffad79;
+  font-size: 12px;
+  min-height: 44px;
+}
+.secondary:hover {
+  background: #392a24;
+}
+.text-button {
+  color: #ff9e65;
+  font-size: 11px;
+  min-height: 38px;
+}
+.text-button:hover {
+  color: #ffc29a;
+}
+.hero-foot {
+  color: #acacb6;
+  font-size: 10px;
+  gap: 9px;
+  margin-top: 23px;
+}
+.hero-foot svg {
+  color: #ff8844;
+}
+.hero-foot b {
+  color: #ffc099;
+  font-weight: 650;
+}
+.hero-art {
+  width: 38%;
+  background: radial-gradient(ellipse at 65% 80%, #ff6b2525, transparent 65%);
+}
+.hero-numbers {
+  color: #ff873c;
+  font-size: 148px;
+  top: 87px;
+  left: 6%;
+  text-shadow: 0 5px 50px #f46f2340;
+}
+.hero-numbers > span {
+  color: #ff873c70;
+  font-size: 66px;
+}
+.orbit {
+  border-color: #fb82393a;
+  left: 0;
+  top: 36px;
+}
+.orbit-two {
+  left: 0;
+}
+.orbit-three {
+  left: 8%;
+}
+.art-caption {
+  color: #d9936a;
+  font-size: 7px;
+  left: 1%;
+  bottom: 29px;
+}
+.art-plus {
+  color: #ff9755;
+}
+.overview-stats {
+  padding: 26px 0;
+}
+.overview-stats strong {
+  color: #f2f2f4;
+  font-size: 30px;
+  font-weight: 800;
+}
+.overview-stats span {
+  color: #aaaab4;
+  font-size: 11px;
+}
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 24px;
+}
+.journey-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 25px;
+}
+.journey-section .section-title {
+  margin-bottom: 19px;
+}
+.journey-next h2 {
+  font-size: 21px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.journey-next > p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #aaaab4;
+}
+.journey-next .badge {
+  font-size: 8px;
+  white-space: nowrap;
+}
+.journey-progress > .section-title svg {
+  color: #ff9150;
+}
+.progress-groups:not(.compact) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.journey-progress .progress-label {
+  font-size: 10px;
+  min-height: 21px;
+}
+.progress-disclaimer {
+  color: #90909d;
+  font-size: 10px;
+  line-height: 1.8;
+  margin: 20px 0 0;
+}
+.intro-shortcut {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 19px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+.intro-shortcut > svg {
+  color: #ff944f;
+}
+.intro-shortcut h3 {
+  font-size: 12px;
+  margin: 0 0 4px;
+}
+.intro-shortcut p {
+  font-size: 11px;
+  color: #aaaab3;
+  margin: 0;
+}
+.intro-shortcut > .text-button {
+  margin-left: auto;
+  text-align: left;
+  max-width: 200px;
+}
+.section-title h2 {
+  font-size: 24px;
+}
+.section-title > span {
+  color: #aaaab5;
+  font-size: 12px;
+}
+.module-grid {
+  gap: 16px;
+}
+.module-cover {
+  border: 1px solid #414147;
+  background: #232428;
+  color: #f3f3f5;
+  height: 218px;
+}
+.cover-0 {
+  background: linear-gradient(145deg, #2c2d32, #191a1e);
+  color: #fbfbfc;
+}
+.cover-1 {
+  background: linear-gradient(145deg, #3b2a23, #1d1d21);
+  color: #ffc194;
+}
+.cover-2 {
+  background: linear-gradient(145deg, #ff9f44, #ed632b);
+  color: #171719;
+  border-color: #de793c;
+}
+.cover-3 {
+  background: linear-gradient(145deg, #bc4b21, #59271e);
+  color: #ffede3;
+  border-color: #82402b;
+}
+.cover-4 {
+  background: linear-gradient(145deg, #34343b, #17181b);
+  color: #ff8d47;
+  border-color: #47414a;
+}
+.module-cover strong {
+  font-weight: 800;
+  font-size: 31px;
+}
+.cover-top {
+  font-size: 6px;
+  letter-spacing: 0.8px;
+}
+.cover-kicker {
+  font-size: 6px;
+  letter-spacing: 0.8px;
+}
+.cover-bottom {
+  font-size: 6px;
+  letter-spacing: 0.6px;
+}
+.cover-art {
+  opacity: 0.27;
+}
+.module-card:hover .module-cover {
+  box-shadow: 0 8px 24px #0005;
+  border-color: #ff8a46;
+}
+.module-meta {
+  color: #ff9c63;
+  font-size: 8px;
+}
+.module-card h3 {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #ededf1;
+}
+.module-card > p {
+  font-size: 10px;
+  color: #9b9ba8;
+}
+.pillars {
+  gap: 25px;
+  padding-block: 30px;
+}
+.pillars h2 {
+  font-size: 24px;
+}
+.pillars p {
+  color: #aaaab6;
+  font-size: 12px;
+}
+.pillars h3 {
+  font-size: 12px;
+  color: #eeeef3;
+  letter-spacing: 0.7px;
+}
+.pillar-icon {
+  background: #ff762c17;
+  color: #ff944c;
+  border: 1px solid #ff762c22;
+  width: 39px;
+  height: 39px;
+}
+.pillars .text-button {
+  font-size: 10px;
+  margin-top: 12px;
+  gap: 6px;
+}
+.concept-strip {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  border: 1px solid #3b302c;
+  background: linear-gradient(110deg, #ff762c0f, #1a1b1f 65%);
+  padding: 28px;
+  border-radius: 9px;
+  margin-top: 29px;
+}
+.concept-number {
+  font-family: Manrope, sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -4px;
+  color: #ff873d;
+  flex-shrink: 0;
+  transform: rotate(-7deg);
+}
+.concept-number > span {
+  display: block;
+  font-size: 23px;
+  letter-spacing: -2px;
+  text-align: right;
+  margin-top: 8px;
+}
+.concept-strip h2 {
+  font-size: 19px;
+  margin: 8px 0;
+}
+.concept-strip p {
+  font-size: 11px;
+  line-height: 1.9;
+  color: #a3a3ae;
+  margin: 0;
+}
+.calendar-demo {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border-left: 2px solid #fb873e;
+  background: #ff752b0c;
+  border-radius: 0 5px 5px 0;
+  padding: 13px 15px;
+  margin: 20px 0;
+}
+.calendar-demo svg {
+  color: #ff9b5f;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.calendar-demo p {
+  font-size: 10px;
+  color: #ffb181;
+  font-weight: 650;
+  margin: 0;
+  line-height: 1.8;
+}
+.calendar-demo p > span {
+  display: block;
+  color: #aaaab5;
+  font-weight: 400;
+  font-size: 11px;
+}
+.phase-legend {
+  font-size: 10px;
+  color: #aaaab5;
+}
+.phase-legend b {
+  color: #d1d1d9;
+}
+.phase-0 {
+  --phase: #ffac65;
+  --phase-bg: #34271f;
+}
+.phase-1 {
+  --phase: #f58043;
+  --phase-bg: #3e2922;
+}
+.phase-2 {
+  --phase: #c8623e;
+  --phase-bg: #352829;
+}
+.phase-legend .dot {
+  background: var(--phase);
+}
+.day {
+  height: 78px;
+  background: var(--phase-bg);
+  border: 1px solid #ffffff09;
+}
+.day small {
+  color: #b8a79d;
+  font-size: 7px;
+}
+.day strong {
+  color: #ffcba4;
+  font-size: 17px;
+  font-weight: 650;
+}
+.day .day-type {
+  font-size: 5px;
+  font-weight: 650;
+  letter-spacing: 0.1px;
+  margin-top: 7px;
+  color: #ffb987;
+}
+.day.recovery {
+  background: #202126;
+  border-color: #33343b;
+}
+.day.recovery strong {
+  color: #c6c6d1;
+}
+.day.recovery small,
+.day.recovery .day-type {
+  color: #9999a7;
+}
+.day.selected {
+  background: var(--gradient);
+  border: 1px solid #ffb37b;
+  box-shadow: 0 0 0 2px #ff8c4230;
+}
+.day.selected strong,
+.day.selected small,
+.day.selected .day-type {
+  color: #161618;
+}
+.closing-dot {
+  background: #ffb77b;
+  bottom: 2px;
+}
+.day-detail {
+  background: #1a1b1f;
+  border-color: #34343b;
+}
+.day-detail p {
+  font-size: 12px;
+  color: #aaaab6;
+}
+.day-detail h3 {
+  font-size: 17px;
+  color: #f0f0f3;
+}
+.day-actions {
+  min-width: 220px;
+}
+.day-actions > .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+.day-actions button {
+  font-size: 11px;
+  gap: 12px;
+}
+.day-actions .suggested {
+  color: #ffc39a;
+}
+.habit-links {
+  display: flex;
+  gap: 22px;
+  margin-top: 9px;
+}
+.calendar-note {
+  font-size: 11px;
+  color: #aaaab5;
+  line-height: 1.9;
+}
+.notice {
+  background: #ff772b0b;
+  border: 1px solid #593b2c;
+  color: #ffb17d;
+}
+.notice p {
+  color: #bcafa8;
+  font-size: 12px;
+}
+.notice .text-button {
+  font-size: 11px;
+  padding-bottom: 0;
+}
+.badge {
+  background: #ff7b2d15;
+  color: #ffad79;
+  border: 1px solid #ff7b2d30;
+}
+.page-heading p {
+  color: #aaaab5;
+  font-size: 13px;
+}
+.back {
+  color: #ffab75;
+  font-size: 12px;
+  min-height: 44px;
+}
+.body-copy {
+  color: #b1b1bc;
+  font-size: 13px;
+}
+.module-lessons > button {
+  background: #1c1d22;
+  border-color: #34343c;
+}
+.module-lessons > button:hover {
+  background: #29252a;
+  border-color: #76513b;
+}
+.module-lessons small {
+  color: #a6a6b2;
+}
+.module-lesson-number {
+  color: #f49c62;
+}
+.lesson-state {
+  color: #a8a8b5;
+  font-size: 10px;
+}
+.lesson-state.is-done {
+  color: #ffae77;
+}
+.extras article,
+.phase-cards article {
+  background: #1b1c21;
+  border-color: #33343b;
+}
+.extras p,
+.phase-cards p {
+  color: #a7a7b3;
+  font-size: 12px;
+}
+.extras svg {
+  color: #92929d;
+}
+.phase-cards b {
+  color: #ffad75;
+}
+.video-cover {
+  background:
+    radial-gradient(ellipse at bottom right, #a9472459, transparent), #1e1f25;
+  border: 1px solid #3a3436;
+}
+.video-cover:after {
+  border-color: #ff873c3d;
+}
+.video-cover > .eyebrow {
+  color: #c9a38d;
+}
+.video-center h2 {
+  color: #ff9750;
+  text-transform: uppercase;
+}
+.video-center p {
+  color: #babac4;
+}
+.video-icon {
+  color: #ff995c;
+  border-color: #fc914c80;
+  background: #ff802d0b;
+}
+.video-caption {
+  color: #c5b8af;
+}
+.real-video {
+  background: #1e1f25;
+}
+.lesson-title h1 {
+  color: #f5f5f8;
+}
+.workout-stats svg {
+  color: #ff974f;
+}
+.workout-stats b {
+  color: #f5f5f8;
+}
+.workout-stats small {
+  color: #a6a6b2;
+  font-size: 10px;
+}
+.lesson-copy p {
+  color: #b2b2be;
+  font-size: 13px;
+}
+.lesson-copy .material {
+  background: #222329;
+  border-color: #3c3d44;
+}
+.exercise-list > div {
+  background: #1b1c21;
+  border-color: #34353b;
+}
+.exercise-list > div > span {
+  color: #ff9753;
+}
+.exercise-list p {
+  color: #e7e7ed;
+}
+.exercise-list small {
+  color: #a3a3b0;
+  font-size: 11px;
+}
+.completion > span {
+  color: #aaaab6;
+  font-size: 10px;
+}
+.lesson-sidebar {
+  background: #18191e;
+  border-color: #35363d;
+}
+.lesson-sidebar button {
+  color: #b4b4c0;
+}
+.lesson-sidebar button.active {
+  background: #ff792519;
+  color: #ffb582;
+}
+.lesson-sidebar button:hover {
+  background: #2b2525;
+}
+.lesson-sidebar small {
+  color: #aaaab6;
+}
+.lesson-number {
+  border-color: #5f4b40;
+  color: #ffad76;
+}
+.lesson-pagination button {
+  color: #e6b18b;
+}
+.food-banner {
+  background:
+    radial-gradient(ellipse at right, #ff762b21, transparent 80%), #232126;
+  border: 1px solid #4f352b;
+  color: #ff944c;
+}
+.food-banner h2 {
+  color: #f8f3ef;
+  font-weight: 800;
+}
+.food-banner p {
+  color: #b8aba4;
+  font-size: 13px;
+}
+.food-banner .eyebrow {
+  color: #ffa569;
+}
+.filters label {
+  color: #b5b5c0;
+  font-size: 12px;
+}
+.filters select {
+  background: #222329;
+  border: 1px solid #43434c;
+  color: #eeeef5;
+  font-size: 13px;
+  min-height: 44px;
+}
+.recipe-card {
+  background: #1c1d23;
+  border-color: #37373f;
+}
+.recipe-card:hover {
+  border-color: #bc683b;
+}
+.recipe-art {
+  background: #463026;
+  color: #e7a16c;
+}
+.recipe-art.sage {
+  background: #3c3430;
+  color: #dca886;
+}
+.recipe-art.lavender {
+  background: #343039;
+  color: #ba9e96;
+}
+.recipe-art.sand {
+  background: #42372c;
+  color: #d6ae81;
+}
+.recipe-art i {
+  color: #dbc0af;
+}
+.recipe-body h3 {
+  color: #f0f0f5;
+  font-size: 14px;
+}
+.recipe-body .eyebrow {
+  color: #d39a73;
+  font-size: 8px;
+}
+.recipe-body p {
+  color: #afa3a0;
+  font-size: 11px;
+}
+.material {
+  background: #232329;
+  border: 1px solid #3a383e;
+  color: #ff9955;
+}
+.material h3 {
+  color: #e7dfda;
+  font-size: 12px;
+}
+.material p {
+  color: #aca3a0;
+  font-size: 11px;
+}
+.material a {
+  color: #ffb17f;
+}
+.empty {
+  border-color: #6a4b3a;
+  color: #b2a79e;
+  background: #1b1c21;
+}
+.empty h3 {
+  color: #e7d5c6;
+}
+.recipe-dialog {
+  background: #1b1c21;
+  color: #f6f1ed;
+  border-color: #67503e;
+}
+.recipe-dialog::backdrop {
+  background: #000b;
+}
+.recipe-dialog p,
+.recipe-dialog li {
+  color: #bcb6b4;
+  font-size: 13px;
+}
+.recipe-dialog h3 {
+  color: #f4dccb;
+}
+.recipe-field {
+  border-color: #363338;
+}
+.recipe-info {
+  color: #c3a18c;
+}
+.dialog-close {
+  background: #39302b;
+  color: #ffb17a;
+}
+.skip-link {
+  background: #ff9146;
+  color: #171718;
+}
+.close-menu {
+  color: #c8c8d1;
+}
+footer {
+  color: #90909d;
+  font-size: 9px;
+}
+.muted {
+  color: #a3a3af;
+}
+/* Treinos: as páginas e a lógica de conclusão continuam compartilhadas com os módulos. */
+.workouts-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+.workouts-summary > .progress-groups {
+  flex: 1;
+}
+.workouts-summary > .primary {
+  flex-shrink: 0;
+  font-size: 11px;
+}
+.workout-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.phase-timing {
+  color: #ffa76d !important;
+  font-family: Manrope, sans-serif;
+  font-size: 19px !important;
+  font-weight: 700;
+}
+.workout-card {
+  padding: 0;
+  border: 1px solid #3c3633;
+  border-radius: 8px;
+  background: #1d1e23;
+  overflow: hidden;
+  text-align: left;
+  min-width: 0;
+}
+.workout-card:hover {
+  transform: translateY(-3px);
+  border-color: #d37841;
+}
+.workout-art {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  height: 200px;
+  background:
+    radial-gradient(ellipse at 100% 70%, #d6642639, transparent 80%), #292329;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.workout-art:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 1px solid #ff963b40;
+  border-radius: 50%;
+  height: 260px;
+  width: 180px;
+  top: -28px;
+  right: -35px;
+  transform: rotate(35deg);
+}
+.workout-art .eyebrow {
+  font-size: 7px;
+  letter-spacing: 1.5px;
+  color: #dbae8e;
+}
+.workout-art > strong {
+  font-family: Manrope, sans-serif;
+  font-size: 81px;
+  font-weight: 800;
+  line-height: 0.85;
+  letter-spacing: -5px;
+  color: #ff8e43;
+}
+.workout-art-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffb37a;
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 1px;
+}
+.workout-phase-1 .workout-art {
+  background: linear-gradient(135deg, #74321f, #2c2022);
+}
+.workout-phase-1 .workout-art > strong {
+  color: #ffad78;
+}
+.workout-phase-2 .workout-art {
+  background: linear-gradient(135deg, #303037, #1b1b21);
+}
+.workout-card-body {
+  padding: 19px;
+}
+.workout-card-body h3 {
+  font-size: 13px;
+}
+.workout-card-body p {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 10px;
+  color: #a8a8b5;
+  flex-wrap: wrap;
+}
+.workout-card-body p > span {
+  margin-left: auto;
+  color: #ffad79;
+  font-size: 9px;
+}
+.workout-card-body small {
+  font-size: 10px;
+}
+.workout-phase h2 {
+  font-size: 30px;
+  letter-spacing: -0.4px;
+}
+/* Hidratação: registro manual e meta informada pela própria aluna. */
+.hydration-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 24px;
+}
+.hydration-status,
+.hydration-settings {
+  padding: 30px;
+}
+.hydration-status .section-title svg {
+  color: #ff9854;
+}
+.water-total {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin: 30px 0;
+}
+.water-total strong {
+  font-family: Manrope, sans-serif;
+  font-size: 66px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -3px;
+  color: #ff954c;
+}
+.water-total > span {
+  color: #a9a9b5;
+  font-size: 12px;
+}
+.hydration-status .progress-track {
+  height: 9px;
+}
+.hydration-grid form {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+.hydration-grid label {
+  font-size: 12px;
+  color: #c2c2cc;
+}
+.hydration-grid input {
+  width: 100%;
+  min-width: 0;
+  background: #121317;
+  border: 1px solid #48424a;
+  border-radius: 5px;
+  color: #f3f3f6;
+  min-height: 46px;
+  padding: 12px;
+  font: inherit;
+  font-size: 13px;
+}
+.hydration-grid input::placeholder {
+  color: #888895;
+}
+.input-action {
+  display: flex;
+  gap: 9px;
+}
+.input-action .primary {
+  font-size: 11px;
+  gap: 6px;
+  padding: 12px;
+}
+.hydration-status > .text-button {
+  margin-top: 15px;
+  gap: 8px;
+  font-size: 11px;
+}
+.water-message {
+  font-size: 11px;
+  color: #ffb27f;
+  min-height: 18px;
+}
+.hydration-settings h2 {
+  font-size: 27px;
+  line-height: 1.4;
+  margin-top: 13px;
+}
+.hydration-settings .secondary {
+  justify-self: start;
+  margin-top: 2px;
+}
+.hydration-settings .notice {
+  margin-bottom: 0;
+}
+.hydration-tips {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #1b1c20;
+}
+.hydration-tips > svg {
+  color: #b26c43;
+  flex-shrink: 0;
+}
+.hydration-tips p {
+  margin-bottom: 0;
+}
+.hydration-tips h2 {
+  margin: 9px 0 12px;
+}
+@media (min-width: 1500px) {
+  .hero {
+    min-height: 430px;
+  }
+  .hero h1 {
+    font-size: 48px;
+    max-width: 650px;
+  }
+  .hero-content {
+    padding: 43px;
+  }
+  .hero-numbers {
+    font-size: 170px;
+    top: 95px;
+  }
+  .module-cover {
+    height: 250px;
+  }
+  .module-cover strong {
+    font-size: 37px;
+  }
+}
+@media (max-width: 1150px) {
+  .hero h1 {
+    font-size: 37px;
+    max-width: 510px;
+  }
+  .hero-content {
+    width: 75%;
+    padding: 31px;
+  }
+  .hero-art {
+    width: 30%;
+    opacity: 0.6;
+  }
+  .hero-numbers {
+    font-size: 125px;
+    left: 0;
+  }
+  .hero-numbers > span {
+    font-size: 55px;
+  }
+  .hero p {
+    font-size: 12px;
+    max-width: 430px;
+  }
+  .journey-section {
+    gap: 14px;
+  }
+  .panel {
+    padding: 20px;
+  }
+  .journey-section .progress-groups {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+  .progress-disclaimer {
+    margin-top: 13px;
+  }
+  .journey-next h2 {
+    font-size: 19px;
+  }
+  .journey-next > p {
+    font-size: 10px;
+    flex-wrap: wrap;
+  }
+  .journey-next .section-title {
+    gap: 8px;
+  }
+  .journey-next .eyebrow {
+    font-size: 8px;
+  }
+  .journey-next .badge {
+    font-size: 7px;
+  }
+  .overview-stats span {
+    font-size: 10px;
+  }
+  .module-cover {
+    height: 195px;
+    padding: 12px;
+  }
+  .module-cover strong {
+    font-size: 26px;
+  }
+  .module-cover .cover-top,
+  .module-cover .cover-kicker,
+  .module-cover .cover-bottom {
+    font-size: 5px;
+  }
+  .days {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .day {
+    height: 79px;
+  }
+  .day .day-type {
+    font-size: 8px;
+    margin-top: 5px;
+    letter-spacing: 0.4px;
+  }
+  .day strong {
+    font-size: 21px;
+  }
+  .day small {
+    font-size: 8px;
+  }
+  .workout-grid {
+    gap: 14px;
+  }
+  .workout-art {
+    height: 180px;
+  }
+  .workout-card-body {
+    padding: 14px;
+  }
+  .workout-card-body h3 {
+    font-size: 12px;
+  }
+  .workouts-summary {
+    gap: 20px;
+  }
+  .workouts-summary .progress-groups {
+    gap: 18px;
+  }
+  .workouts-summary .progress-label {
+    font-size: 10px;
+  }
+  .hydration-grid {
+    gap: 18px;
+  }
+  .hydration-status,
+  .hydration-settings {
+    padding: 24px;
+  }
+  .hydration-settings h2 {
+    font-size: 24px;
+  }
+  .hydration-grid .input-action {
+    flex-wrap: wrap;
+  }
+  .hydration-grid .input-action > .primary {
+    width: 100%;
+  }
+  .concept-strip h2 {
+    font-size: 18px;
+  }
+  .concept-strip .eyebrow {
+    font-size: 9px;
+  }
+}
+@media (max-width: 850px) {
+  .hero-content {
+    width: 100%;
+  }
+  .hero-art {
+    width: 35%;
+    opacity: 0.22;
+  }
+  .hero h1 {
+    font-size: 37px;
+    max-width: 450px;
+  }
+  .hero-content p {
+    max-width: 390px;
+  }
+  .welcome-label {
+    display: none;
+  }
+  .journey-section {
+    grid-template-columns: 1fr;
+  }
+  .journey-section .progress-groups {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+  .intro-shortcut {
+    flex-wrap: wrap;
+  }
+  .intro-shortcut > .text-button {
+    margin-left: 34px;
+    max-width: none;
+  }
+  .module-cover {
+    height: 220px;
+    padding: 15px;
+  }
+  .module-cover strong {
+    font-size: 32px;
+  }
+  .pillars {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .pillars > article:last-child {
+    grid-column: auto;
+  }
+  .pillars > div:first-child {
+    grid-column: 1/-1;
+  }
+  .pillars article {
+    display: block;
+  }
+  .pillars article .pillar-icon {
+    margin-top: 0;
+  }
+  .concept-strip {
+    padding: 22px;
+    gap: 25px;
+  }
+  .concept-strip h2 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .concept-strip .eyebrow {
+    font-size: 8px;
+  }
+  .workouts-summary {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .workouts-summary > .primary {
+    align-self: start;
+  }
+  .workout-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .workout-art {
+    height: 200px;
+  }
+  .hydration-grid {
+    grid-template-columns: 1fr;
+  }
+  .hydration-grid .input-action {
+    flex-wrap: nowrap;
+  }
+  .hydration-grid .input-action > .primary {
+    width: auto;
+  }
+  .day-actions {
+    min-width: 0;
+  }
+  .day-detail h3 {
+    font-size: 17px;
+  }
+  .day-detail > div {
+    max-width: none;
+  }
+  .sidebar-bottom p {
+    font-size: 9px;
+  }
+  .sidebar nav button {
+    font-size: 11px;
+  }
+}
+@media (max-width: 640px) {
+  .sidebar {
+    padding-top: 28px;
+  }
+  .course-label {
+    margin-top: 30px;
+  }
+  .sidebar nav button {
+    padding: 12px;
+    font-size: 12px;
+  }
+  .sidebar-progress {
+    margin-top: 23px;
+    padding-top: 20px;
+  }
+  .sidebar-bottom {
+    padding-top: 18px;
+  }
+  .sidebar-bottom p {
+    margin-top: 6px;
+    font-size: 9px;
+  }
+  .demo-badge {
+    font-size: 8px;
+  }
+  .topbar {
+    height: 65px;
+  }
+  .welcome .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .welcome p {
+    font-size: 11px;
+    line-height: 1.7;
+    max-width: 295px;
+  }
+  .welcome {
+    margin-bottom: 21px;
+  }
+  .hero {
+    min-height: 405px;
+  }
+  .hero-content {
+    padding: 28px 23px;
+  }
+  .hero-label {
+    font-size: 7px;
+    letter-spacing: 1.1px;
+  }
+  .hero h1 {
+    font-size: 34px;
+    line-height: 1.13;
+    letter-spacing: -1px;
+    margin: 24px 0 18px;
+    max-width: 310px;
+  }
+  .hero p {
+    font-size: 12px;
+    max-width: 290px;
+    line-height: 1.8;
+  }
+  .hero-art {
+    opacity: 0.15;
+    width: 40%;
+  }
+  .hero-numbers {
+    font-size: 110px;
+    top: 135px;
+  }
+  .hero-numbers > span {
+    font-size: 52px;
+  }
+  .hero-foot {
+    font-size: 9px;
+    line-height: 1.8;
+    gap: 6px;
+    margin-top: 21px;
+  }
+  .lime-button {
+    font-size: 10px;
+    gap: 13px;
+    width: 100%;
+    margin-top: 8px;
+    min-height: 48px;
+    letter-spacing: 0.4px;
+  }
+  .overview-stats {
+    padding: 23px 0;
+  }
+  .overview-stats strong {
+    font-size: 28px;
+  }
+  .overview-stats span {
+    font-size: 9px;
+    max-width: 70px;
+    min-height: 30px;
+  }
+  .journey-section {
+    margin-top: 22px;
+    gap: 15px;
+  }
+  .journey-next h2 {
+    font-size: 20px;
+  }
+  .journey-next > p {
+    font-size: 11px;
+    line-height: 1.8;
+  }
+  .journey-next .badge {
+    font-size: 8px;
+  }
+  .journey-next .eyebrow {
+    font-size: 9px;
+  }
+  .journey-section .progress-groups {
+    gap: 20px;
+  }
+  .journey-progress .progress-label {
+    font-size: 10px;
+    gap: 6px;
+    min-height: 32px;
+  }
+  .progress-group > small {
+    font-size: 9px;
+    line-height: 1.7;
+    display: block;
+  }
+  .progress-disclaimer {
+    font-size: 10px;
+  }
+  .intro-shortcut {
+    gap: 10px;
+    padding-block: 19px;
+  }
+  .intro-shortcut > div {
+    flex: 1;
+  }
+  .intro-shortcut h3 {
+    font-size: 11px;
+  }
+  .intro-shortcut p {
+    font-size: 10px;
+  }
+  .intro-shortcut > .text-button {
+    margin-left: 30px;
+    font-size: 11px;
+    min-height: 40px;
+  }
+  .section-title h2 {
+    font-size: 21px;
+  }
+  .section-title .eyebrow {
+    font-size: 8px;
+  }
+  .section-title > .text-button {
+    font-size: 9px;
+    max-width: 115px;
+    line-height: 1.7;
+  }
+  .module-grid {
+    gap: 24px 14px;
+  }
+  .module-cover {
+    height: 217px;
+    padding: 16px;
+  }
+  .module-cover strong {
+    font-size: 31px;
+  }
+  .module-cover .cover-top {
+    font-size: 5px;
+  }
+  .module-card h3 {
+    font-size: 12px;
+  }
+  .module-card > p {
+    font-size: 10px;
+    line-height: 1.8;
+  }
+  .module-meta {
+    font-size: 8px;
+  }
+  .pillars {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-block: 26px;
+  }
+  .pillars > div:first-child {
+    grid-column: auto;
+  }
+  .pillars article {
+    display: grid;
+    grid-template-columns: 39px 1fr;
+    gap: 0 14px;
+  }
+  .pillars article .pillar-icon {
+    grid-row: 1/4;
+    margin: 0;
+  }
+  .pillars h3 {
+    font-size: 13px;
+    margin-bottom: 7px;
+  }
+  .pillars p {
+    font-size: 12px;
+  }
+  .pillars article .text-button {
+    grid-column: 2;
+    font-size: 11px;
+    justify-content: start;
+    margin-top: 8px;
+    min-height: 40px;
+  }
+  .pillars h2 {
+    font-size: 26px;
+  }
+  .concept-strip {
+    gap: 18px;
+    padding: 22px 18px;
+    align-items: flex-start;
+  }
+  .concept-number {
+    font-size: 41px;
+    margin-top: 7px;
+    letter-spacing: -3px;
+  }
+  .concept-number > span {
+    font-size: 19px;
+    letter-spacing: -1.5px;
+  }
+  .concept-strip h2 {
+    font-size: 18px;
+    margin: 9px 0;
+  }
+  .concept-strip p {
+    font-size: 11px;
+  }
+  .concept-strip .eyebrow {
+    font-size: 7px;
+    letter-spacing: 0.8px;
+  }
+  .calendar-demo {
+    padding: 12px;
+    gap: 9px;
+  }
+  .calendar-demo p {
+    font-size: 9px;
+  }
+  .calendar-demo p > span {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+  .phase-legend {
+    font-size: 8px;
+    gap: 11px;
+  }
+  .day {
+    height: 74px;
+  }
+  .day strong {
+    font-size: 19px;
+  }
+  .day small {
+    font-size: 7px;
+  }
+  .day .day-type {
+    font-size: 6px;
+    letter-spacing: 0;
+    margin-top: 7px;
+  }
+  .day-detail h3 {
+    font-size: 16px;
+  }
+  .day-detail p {
+    font-size: 11px;
+    line-height: 1.9;
+  }
+  .day-actions button {
+    font-size: 11px;
+    min-height: 44px;
+  }
+  .day-actions > .eyebrow {
+    font-size: 8px;
+    margin-top: 7px;
+  }
+  .habit-links {
+    gap: 20px;
+  }
+  .habit-links button {
+    font-size: 11px;
+    min-height: 44px;
+  }
+  .notice p {
+    font-size: 11px;
+    line-height: 1.9;
+  }
+  .calendar-note {
+    font-size: 10px;
+  }
+  .phase-cards article {
+    padding: 22px;
+  }
+  .module-lessons > button {
+    padding: 17px 12px;
+    gap: 10px;
+  }
+  .module-lessons h3 {
+    font-size: 12px;
+  }
+  .module-lessons small {
+    font-size: 10px;
+    line-height: 1.8;
+  }
+  .lesson-state {
+    font-size: 0;
+  }
+  .module-lesson-number {
+    font-size: 19px;
+  }
+  .body-copy {
+    font-size: 12px;
+  }
+  .exercise-list small {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+  .lesson-copy p {
+    font-size: 13px;
+  }
+  .completion > span {
+    font-size: 10px;
+  }
+  .lesson-pagination button {
+    font-size: 12px;
+    min-height: 44px;
+  }
+  .food-banner p {
+    font-size: 12px;
+  }
+  .filters label {
+    font-size: 11px;
+  }
+  .filters select {
+    font-size: 12px;
+  }
+  .recipe-body h3 {
+    font-size: 13px;
+    min-height: 42px;
+  }
+  .recipe-body .eyebrow {
+    font-size: 7px;
+  }
+  .recipe-body p {
+    font-size: 10px;
+  }
+  .recipe-body {
+    padding: 15px 11px;
+  }
+  .material h3 {
+    font-size: 12px;
+  }
+  .material p {
+    font-size: 11px;
+  }
+  .recipe-dialog {
+    padding: 32px 23px;
+  }
+  .recipe-dialog h3 {
+    font-size: 13px;
+  }
+  .recipe-dialog p,
+  .recipe-dialog li {
+    font-size: 12px;
+  }
+  .workout-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+  .workout-art {
+    height: 208px;
+    padding: 20px;
+  }
+  .workout-art > strong {
+    font-size: 95px;
+  }
+  .workout-art-bottom {
+    font-size: 10px;
+  }
+  .workout-art .eyebrow {
+    font-size: 8px;
+  }
+  .workout-card-body {
+    padding: 20px;
+  }
+  .workout-card-body h3 {
+    font-size: 15px;
+  }
+  .workout-card-body p {
+    font-size: 12px;
+  }
+  .workout-card-body p > span {
+    font-size: 10px;
+  }
+  .workout-card-body small {
+    font-size: 11px;
+  }
+  .workout-phase h2 {
+    font-size: 29px;
+  }
+  .workouts-summary .progress-groups {
+    gap: 20px;
+  }
+  .workouts-summary > .primary {
+    width: 100%;
+    font-size: 11px;
+  }
+  .phase-timing {
+    font-size: 16px !important;
+  }
+  .hydration-status,
+  .hydration-settings {
+    padding: 23px;
+  }
+  .hydration-grid {
+    gap: 20px;
+  }
+  .water-total strong {
+    font-size: 66px;
+  }
+  .hydration-grid .input-action {
+    flex-wrap: wrap;
+  }
+  .hydration-grid .input-action > .primary {
+    width: 100%;
+    min-height: 46px;
+  }
+  .hydration-grid input {
+    min-height: 48px;
+    font-size: 16px;
+  }
+  .hydration-status > .text-button {
+    min-height: 44px;
+    font-size: 12px;
+  }
+  .hydration-tips {
+    padding: 22px;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .hydration-tips > svg {
+    width: 36px;
+    height: 36px;
+    margin-top: 6px;
+  }
+  .hydration-tips h2 {
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  .hydration-tips .eyebrow {
+    font-size: 8px;
+  }
+  .hydration-settings h2 {
+    font-size: 27px;
+  }
+  .hydration-settings .secondary {
+    width: 100%;
+    min-height: 46px;
+  }
+  .hydration-status .progress-label {
+    font-size: 11px;
+  }
+  footer {
+    font-size: 9px;
+  }
+}
+@media (max-width: 360px) {
+  main {
+    padding-inline: 16px;
+  }
+  .hero-content {
+    padding-inline: 20px;
+  }
+  .hero h1 {
+    font-size: 31px;
+  }
+  .module-cover strong {
+    font-size: 27px;
+  }
+  .module-cover {
+    height: 200px;
+    padding-inline: 12px;
+  }
+  .journey-progress .progress-groups {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .journey-progress .progress-label {
+    min-height: auto;
+  }
+  .day .day-type {
+    font-size: 5px;
+  }
+  .demo-badge {
+    font-size: 7px;
+  }
+  .concept-strip {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .concept-number {
+    display: none;
+  }
+}
+.brand-mark .brand-arrow {
+  position: absolute;
+  top: -7px;
+  right: -2px;
+  width: 22px;
+  height: 22px;
+  color: #ff7d35;
+}
+@media (max-width: 640px) {
+  .sidebar {
+    visibility: hidden;
+  }
+  .sidebar.open {
+    visibility: visible;
+  }
+}
+@media(max-width:640px){.intro-shortcut>div{min-width:calc(100% - 40px)}.intro-shortcut>.text-button{max-width:calc(100% - 30px)}}
